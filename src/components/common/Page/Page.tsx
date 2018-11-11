@@ -1,25 +1,26 @@
 import * as React from 'react';
-
-import './Page.css';
-
-// Get Page-part
 import { cn } from '@bem-react/classname';
 import { RegistryConsumer } from '@bem-react/di';
 
-const BodyCN = cn('Body');
-const PageCN = cn('Page');
+const cnPage = cn('Page');
+const cnHeader = cn('Header');
 
-// Static block
-export function Page() {
-    return (
-        <RegistryConsumer>
-            {
-                registries => {
-                    const Page = registries[PageCN()].get(BodyCN());
-                    
-                    return <Page />;
-                } 
-            }
-        </RegistryConsumer>
-    );
+import './Page.css'
+
+export class Page extends React.Component {
+    render() {
+        return <RegistryConsumer>
+            {registries => {
+               
+                const registry = registries[cnPage()];
+                const Header = registry.get('Header');
+                // const Content = Page.get<IContentProps>('Content');
+                // const Footer = Page.get('Footer');
+              
+                 return  <div className="Page"> <Header /> </div>
+                 
+
+            }}
+        </RegistryConsumer>;
+    }
 }

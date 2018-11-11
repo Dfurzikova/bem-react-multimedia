@@ -1,5 +1,3 @@
-.Page{
-    width: 100px;
-    height: 100px;
-    background-color: green
+body {
+    font-size: 1em;
 }

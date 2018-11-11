@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+    color: #333333;
+    font-family: ArialMT, Arial;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
