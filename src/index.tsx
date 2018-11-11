@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// Изначально пробовала использовать device-detector.js, но на ios появлялась ошибка, поэтому способ определения платформы такой
+const mobile: Boolean = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)
+let App;
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: http://bit.ly/CRA-PWA
+if (mobile) {
+    App = require('./components/mobile/App/App').App;
+} else {
+    App = require('./components/desktop/App/App').App;
+}
+
+ReactDOM.render(
+    <App />,
+    document.body
+)
+
 serviceWorker.unregister();
