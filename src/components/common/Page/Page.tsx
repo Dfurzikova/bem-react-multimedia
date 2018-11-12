@@ -13,10 +13,16 @@ export class Page extends React.Component {
 
                     const registry = registries[cnPage()];
                     const Header = registry.get('Header');
-                    // const Content = Page.get('Content');
+                    const Content = registry.get('Content');
                     const Footer = registry.get('Footer');
 
-                    return <div className="Page"> <Header /> <Footer /></div>
+                    return (
+                        <div className="Page">
+                            <Header />
+                            <Content />
+                            <Footer />
+                        </div>)
+
                 }}
             </RegistryConsumer>)
     }
