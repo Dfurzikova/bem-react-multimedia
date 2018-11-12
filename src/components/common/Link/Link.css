@@ -1,0 +1,11 @@
+.Link {
+    text-decoration: none;
+    color: #333333;;
+}
+.Link_footer {
+    font-size: 0.600em;
+    color: #858585;
+    letter-spacing: 0.01px;
+    text-align: left;
+    margin-right: 15px;
+}

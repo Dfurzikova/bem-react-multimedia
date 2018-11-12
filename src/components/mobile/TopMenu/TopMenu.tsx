@@ -27,7 +27,7 @@ class TopMenuClass extends React.Component {
                     <a className="Link" href="#">Видеонаблюдение</a>
                 </li>
             </ul>
-)
+        )
     }
 }
 
