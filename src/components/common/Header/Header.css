@@ -8,3 +8,11 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 92px;
+    font-family: Arial-BoldMT, Arial; 
+   
+}

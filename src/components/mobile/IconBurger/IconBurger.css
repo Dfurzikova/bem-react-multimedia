@@ -1,0 +1,14 @@
+/* Стили IconBurger Mobile */
+
+.IconBurger {
+    display: inline-block;
+    background: url('../../../assets/icon_list_m.png') no-repeat center center;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    padding: 20px;
+    z-index: 3;
+    width: 14px;
+    height: 16px;
+    cursor: pointer;
+}

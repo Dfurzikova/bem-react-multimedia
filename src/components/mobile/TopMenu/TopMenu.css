@@ -1,0 +1,17 @@
+/* Стили TopMenu Mobile */
+
+.TopMenu {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: #fc0;
+    border-radius: 10px;
+    z-index: 2;
+    margin: 0;
+    list-style-type: none;
+}
+
+.TopMenu-Item {
+    padding: 7px 0 7px 0;
+}

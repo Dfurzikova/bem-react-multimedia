@@ -14,7 +14,7 @@ if (mobile) {
 
 ReactDOM.render(
     <App />,
-    document.body
+    document.getElementById("root")
 )
 
 serviceWorker.unregister();

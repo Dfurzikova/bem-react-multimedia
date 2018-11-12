@@ -1,14 +1,15 @@
 /* Стили Header Desktop */
 
 .Header {
-    display: flex;
+    border-bottom: 1px solid #f0f0f0;
+    /* display: flex;
     align-items: center;
     justify-content: flex-start;
     height: 92px;
     font-family: Arial-BoldMT, Arial; 
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #f0f0f0; */
 }
 
-.Header-logo {
+.Header-Logo {
     margin-left: 40px;
 }

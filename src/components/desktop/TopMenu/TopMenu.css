@@ -1,0 +1,24 @@
+/* Стили TopMenu Desktop */
+
+.TopMenu {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    color: #333333;
+    list-style-type: none;
+    
+}
+.Header-TopMenu {
+    margin-left: 7px;
+}
+
+.TopMenu-Item {
+    font-size: 0.800em;
+    line-height: 20px;
+    opacity: 0.6;
+    margin: 0 14px 0 14px;
+}
+
+.TopMenu-Item_active {
+    opacity: 1;
+}
