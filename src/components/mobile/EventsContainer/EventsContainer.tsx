@@ -18,6 +18,6 @@ class EventsContainerClass extends React.Component {
 
 const EventsContainerRegistry = new Registry({ id: cn('EventsContainer')() });
 EventsContainerRegistry.set('EventsContainer', EventsContainerClass);
-// HeaderRegistry.set('TopMenu', TopMenu);
+
 
 export const EventsContainer = withRegistry(EventsContainerRegistry)(EventsContainerCommon);

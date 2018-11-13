@@ -15,7 +15,7 @@ export interface IEventItemDataProps extends ICardData {
 }
 
 export const CardData: React.SFC<IEventItemDataProps> = ({ data, icon }) => {
-    console.log(icon);
+   
     return (
         <div className={cnCard('Data')}>
             {icon === 'thermal' && data && data.humidity && data.temperature &&
@@ -30,12 +30,11 @@ export const CardData: React.SFC<IEventItemDataProps> = ({ data, icon }) => {
                     length={data.track.length}
                     volume={data.volume} />
             }
-
             
             { icon === 'stats' && <Graph />}
 
             { icon === 'fridge' && <DataButtons /> }
-            
+
             {icon === 'cam'  && <CameraImage/>}
         </div>
     );

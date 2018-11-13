@@ -1,0 +1,21 @@
+
+.Subtitle {
+    display: flex;
+    justify-content: space-between;
+}
+.Card_size_l .Card-Subtitle {
+    font-size: 0.750em;
+    margin-top: 15px;
+}
+
+.Card_size_m .Card-Subtitle {
+    font-size: 0.750em;
+}
+
+.Card_size_s .Card-Subtitle {
+    font-size: 0.750em;
+}
+
+.Card_size_l .Card-Subtitle {
+    margin-top: 10px;
+}

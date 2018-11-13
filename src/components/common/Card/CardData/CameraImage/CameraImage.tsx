@@ -5,7 +5,6 @@ const cnCameraImage = cn('CameraImage');
 import './CameraImage.css';
 import image from '../../../../../assets/image.jpg'
 
-
 export const CameraImage: React.SFC = (props) => {
     return (
         <img className={cnCameraImage()} src={image}/>

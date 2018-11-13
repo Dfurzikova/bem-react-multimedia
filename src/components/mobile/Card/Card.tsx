@@ -6,6 +6,7 @@ import './Card.css'
 import {ICardProps} from '../../common/Card/Card.d';
 
 const CardRegistry = new Registry({ id: cn('Card')() });
-CardRegistry.set('Card', CardCommon);
+ CardRegistry.set('Card', CardCommon);
+
 
 export const Card = withRegistry<ICardProps>(CardRegistry)(CardCommon);
