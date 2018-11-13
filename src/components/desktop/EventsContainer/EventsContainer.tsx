@@ -1,25 +1,16 @@
-import * as React from 'react';
-import { cn } from '@bem-react/classname';
 import { Registry, withRegistry } from '@bem-react/di';
-import { EventsContainer as EventsContainerCommon } from '../../common/EventsContainer/EventsContainer'; 
-import { Card } from '../Card/Card';
-
+import { cn } from '@bem-react/classname';
+import { EventsContainer as EventsContainerCommon } from '../../common/EventsContainer/EventsContainer';
+import {Card} from '../Card/Card'
 import './EventsContainer.css';
-
-const cnEventsContainer = cn('EventsContainer');
-
-class EventsContainerClass extends React.Component {
-    render() {
-        return (
-            <div className={cnEventsContainer()}>
-               < Card />
-            </div>
-        )
-    }
-}
+//const EventsContainer = EventsContainerCommon;
+import { Thermal } from '../../common/Card/CardData/Thermal/Thermal'
+// import { Music } from '../../common/Card/CardData/Music/Music'
 
 const EventsContainerRegistry = new Registry({ id: cn('EventsContainer')() });
-EventsContainerRegistry.set('EventsContainer', EventsContainerClass);
+EventsContainerRegistry.set('EventsContainer', EventsContainerCommon);
 EventsContainerRegistry.set('Card', Card);
+EventsContainerRegistry.set('Thermal', Thermal);
+// EventsContainerRegistry.set('Music', Music);
 
 export const EventsContainer = withRegistry(EventsContainerRegistry)(EventsContainerCommon);

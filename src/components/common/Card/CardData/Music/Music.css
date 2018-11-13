@@ -1,0 +1,100 @@
+/* .Music {
+   width: 100%;
+   height: 100px;
+   background-color: #e9967a;
+} */
+
+.Music{
+    margin-top: 23px;
+}
+
+.Music-SongInfo {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-column-gap: 6px;
+}
+
+.Music-AlbumCover {
+    grid-column: span 1;
+    grid-row: span 2;
+    height: 52px; 
+    border-radius: 10px;
+}
+
+.Music-Title {
+    grid-column: span 5;
+    grid-row: span 1;
+    display: flex;
+    align-items: center;
+}
+
+.Music-DurationInput {
+    -webkit-appearance: none;
+    width: 89%;
+    height: 1px;
+    background: #979797;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Music-DurationInput:focus {
+    outline: none;
+}
+
+.Music-DurationInput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 12px;
+    height: 20px;
+    border-radius: 5px;
+    background: #d8d8d8;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.Music-Controls {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.Music-ButtonRight {
+    margin-left: 20px;
+}
+
+.Music-VolumeControl {
+    margin-left: 11px;
+}
+
+.Music-VolumeControl {
+    -webkit-appearance: none;
+    width: 61%;
+    height: 3px;
+    background: rgba(216, 216, 216, 0.3);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Music-VolumeControl:focus {
+    outline: none;
+}
+
+.Music-VolumeControl::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 26px;
+    background: #605757;
+    position: relative;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.Music-SongDuration,
+.Music-VolumeRate {
+    font-family: Helvetica;
+    font-size: 0.700em;
+    color: gray;
+    right: 20px;
+    position: absolute;
+}

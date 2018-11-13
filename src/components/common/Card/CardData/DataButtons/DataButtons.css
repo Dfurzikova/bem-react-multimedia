@@ -1,0 +1,20 @@
+.DataButtons{
+    margin-top: 30px;
+}
+.DataButtons-Position{
+    display: inline-block;
+    margin-right: 20px;
+    line-height: 54px;
+    text-align: center;
+}
+.Button {
+    border-radius: 8px;
+    width: 132px;
+    height: 54px;
+    font-family: Arial-BoldMT, Arial;
+    color: #000000;
+    background-color: #e5e5e5;
+}
+.Button_active {
+    background: #ffd93e;
+}

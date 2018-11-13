@@ -1,35 +1,32 @@
- //import * as React from 'react';
-import React, { Component } from 'react';
+import * as React from 'react';
 import { cn } from '@bem-react/classname';
-import { RegistryConsumer } from '@bem-react/di';
-
-const cnEventsContainer = cn('EventsContainer');
+import { Card } from '../Card/Card';
+import * as Data from '../../../events.json'
 import './EventsContainer.css';
-import Data from '../../../events.json'
-import { ICardProps } from '../Card/Card.d';
+import { ICardProps } from '../../common/Card/Card.d';
 
 const events: ICardProps[] = Data.events;
+const cnEventsContainer = cn('EventsContainer');
 
-export class EventsContainer extends React.Component{    
-    render() { 
-        return (
-            <RegistryConsumer>
-                {
-                    registries => {
-                        const registry = registries[cnEventsContainer()];
-                        const EventsContainer = registry.get('EventsContainer');
-                        const Card = registry.get('Card');
-                        
-                        return (
-                            <EventsContainer >
-                                        <Card />
-                            </EventsContainer>
-                        )
-
-                    }
-                }
-            </RegistryConsumer>
-        )
-    }
+export interface EventsContainerProps {
+    className?: string;
 }
 
+const Cards = events.map((event) =>
+    <Card
+        key={event.title}
+        type={event.type}
+        size={event.size}
+        icon={event.icon}
+        title={event.title}
+        source={event.source}
+        time={event.time}
+        description={event.description}
+        data={event.data}
+    />)
+
+export const EventsContainer: React.SFC<EventsContainerProps> = (props) => (
+    <div className={cnEventsContainer()}>
+        {Cards}
+    </div>
+);

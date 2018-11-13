@@ -1,0 +1,15 @@
+.Thermal {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    margin-top: 20px;
+}
+
+.Thermal-Temp,
+.Thermal-Humidity {
+    font-size: 0.900em;
+}
+
+.Temperature,
+.Humidity {
+    font-family: Arial-BoldMT, Arial;
+}

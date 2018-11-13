@@ -12,12 +12,12 @@ export interface ICardProps {
     image?: boolean;
 }
 
-// export interface ICardDetailsProps extends IClassNameProps {
-//     type: string;
-//     size: string;
-//     description: string | null;
-//     data?: ICardData;
-// }
+export interface ICardDetailsProps extends IClassNameProps {
+    type: string;
+    size: string;
+    description: string | null;
+    data?: ICardData;
+}
 
 export interface ICardData extends IClassNameProps {
     type?: string;
@@ -31,3 +31,4 @@ export interface ICardData extends IClassNameProps {
     buttons?: string[];
     image?: string;
 }
+
