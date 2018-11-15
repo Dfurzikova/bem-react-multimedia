@@ -2,8 +2,9 @@ import * as React from 'react';
 import { cn, classnames } from '@bem-react/classname';
 import { Registry, withRegistry } from '@bem-react/di';
 import { Header as HeaderCommon } from '../../common/Header/Header';
-import logo1x from '../../../assets/logo1x.png';
-import logo2x from '../../../assets/logo2x.png';
+ import logo1x from '../../../assets/logo1x.png';
+ import logo2x from '../../../assets/logo2x.png';
+
 import './Header.css';
 import { TopMenu } from '../TopMenu/TopMenu';
 const cnHeader = cn('Header');
