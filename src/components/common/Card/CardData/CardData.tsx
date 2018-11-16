@@ -40,27 +40,3 @@ export const CardData: React.SFC<IEventItemDataProps> = ({ data, icon }) => {
     );
 }
 
-
-// <div className={cnCard('Data')}>
-{/* {icon === 'stats' && <Graph />} */ }
-{/* {icon === 'thermal' && data && data.humidity && data.temperature && 
-   <Thermal humidity={data.humidity} temperature={data.temperature}/>
- } */}
-{/* {icon === 'cam' && data && <Camera link={data.image}/>}
- {
-   icon === 'fridge' && btn && 
-   <div className={cnEventItem('ButtonArea')}>
-     {btn}
-   </div>
- } */}
-{/* {icon === 'music' && data && name && data.track && <Music  
-     albumcover={data.albumcover} 
-     artist={data.artist}
-     name={data.track.name}
-     length={data.track.length}
-     volume={data.volume}/>
- } */}
-{/* {icon === 'music' && data && data.humidity && data.temperature && 
- <Thermal humidity={data.humidity} temperature={data.temperature}/>
-} */}
-//</div>

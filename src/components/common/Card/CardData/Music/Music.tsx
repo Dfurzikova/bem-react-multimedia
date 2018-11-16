@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { cn } from '@bem-react/classname';
-// import image from '../../../assets/Prev.svg'
 import image from '../../../../../assets/Prev.svg'
 const cnMusic = cn('Music');
 import './Music.css';

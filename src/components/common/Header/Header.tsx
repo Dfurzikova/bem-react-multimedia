@@ -5,7 +5,6 @@ import { RegistryConsumer } from '@bem-react/di';
 const cnHeader = cn('Header');
 import './Header.css';
 
-// export class Header extends React.Component<{}, { isOpen: boolean }> 
 export class Header extends React.Component {
     render() {
         return (
